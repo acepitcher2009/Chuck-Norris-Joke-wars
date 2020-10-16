@@ -19,7 +19,7 @@
 <body>
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Netflix Wars</a>
+            <a class="navbar-brand" href="#">Chuck Norris Joke Wars</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -40,40 +40,36 @@
         </nav>
     </div>
     <div class="container my-5 py-5">
+        <div class="row mb-5 pb-5">
+            <div class="col offset-md-5 ">
+                <input id="rst" class="btn btn-secondary btn-xl px-5 py-3" type="Reset" value="Restart">
+            </div>
+        </div>
         <div class="row mt-5">
-            <div class="col-4 offset-md-2">
-                <div class="card" style="width: 18rem; height: 13rem;">
+            <div class="col-4 offset-md-1">
+                <div class="card" style="width: 20rem; height: 18rem;">
                     <div class="card-body">
                         <p id="joke-one">Loading Joke 1...</p>
                     </div>
                     <div class="card-footer">
-                        <input type="button" class="btn btn-secondary btn-md" value="Submit">
+                       <button id="vote1" type="button" class="btn btn-secondary btn-lg px-4 py-1">Vote</button>
                     </div>
                 </div>
 
             </div>
             <div class="col-4 offset-md-2">
-                <div class="card" style="width: 18rem; height: 13rem;">
+                <div class="card" style="width: 20rem; height: 18rem;">
                     <div class="card-body">
                         <p id="joke-two">Loading Joke 2...</p>
                     </div>
                     <div class="card-footer">
-                        <input type="button" class="btn btn-secondary btn-md" value="Submit">
+                        <button id="vote2" type="button" class="btn btn-secondary btn-lg px-4 py-1">Vote</button>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="row mt-5 ">
-            <div class="col offset-md-5 py-5">
-                <input class="btn btn-secondary btn-xl px-5 py-3" type="button" value="  Skip  ">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col offset-md-5 ">
-                <input class="btn btn-secondary btn-xl px-5 py-3" type="Reset" value="Restart">
-            </div>
-        </div>
+
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
