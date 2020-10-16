@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netflix Wars</title>
 
+
     <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&family=Special+Elite&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="styles.css">
@@ -39,22 +40,30 @@
         </nav>
     </div>
     <div class="container my-5 py-5">
-        <div class="row align-items-center">
-            <div class="col-3 offset-md-2" style="border: 2px solid black">
-                <img src="imgs/hb1.jpg" alt="" style="height: 200px; width: 200px; ">
+        <div class="row mt-5">
+            <div class="col-4 offset-md-2">
+                <div class="card" style="width: 18rem; height: 13rem;">
+                    <div class="card-body">
+                        <p id="joke-one">Loading Joke 1...</p>
+                    </div>
+                    <div class="card-footer">
+                        <input type="button" class="btn btn-secondary btn-md" value="Submit">
+                    </div>
+                </div>
+
             </div>
-            <div class="col-3 offset-md-2" style="border: 2px solid black">
-                <img src="imgs/eagle31.jpg" alt="" style="height: 200px; width: 200px;">
+            <div class="col-4 offset-md-2">
+                <div class="card" style="width: 18rem; height: 13rem;">
+                    <div class="card-body">
+                        <p id="joke-two">Loading Joke 2...</p>
+                    </div>
+                    <div class="card-footer">
+                        <input type="button" class="btn btn-secondary btn-md" value="Submit">
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="row my-5">
-            <div class="col-3 offset-md-2">
-                <input class="btn btn-secondary btn-xl px-5 py-3" type="submit" value="Select">
-            </div>
-            <div class="col-3 offset-md-3">
-                <input class="btn btn-secondary btn-xl px-5 py-3" type="submit" value="Select">
-            </div>
-        </div>
+
         <div class="row mt-5 ">
             <div class="col offset-md-5 py-5">
                 <input class="btn btn-secondary btn-xl px-5 py-3" type="button" value="  Skip  ">
@@ -76,6 +85,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
+    <script src="javascript/index.js"></script>
 </body>
 
 </html>
