@@ -71,7 +71,7 @@ function vote() {
             gameState.winners.push(joke2.textContent);
             gameState.losers.push(joke1.textContent);
             gameState.allJokes.splice(0, 1);
-            joke1.textContent = gameState.allJokes[2];
+            
             joke1.textContent = gameState.allJokes[1];
 
 
