@@ -9,17 +9,17 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&family=Special+Elite&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
 </head>
 
-<body>
+<body id="gamePage">
     <div class="container" id="toggleGame">
         <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                 <a class="navbar-brand" href="#">Chuck Norris Joke Wars</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,10 +27,10 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul class="navbar-nav ">
-                        <li class="nav-item active">
+                        <li class="nav-item ">
                             <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item active">
                             <a href="#" class="nav-link">Game</a>
                         </li>
                         
@@ -41,13 +41,13 @@
         <div class="container my-5 py-5">
             <div class="row mb-5 pb-5">
                 <div class="col offset-md-5 ">
-                    <input id="rst" class="btn btn-secondary btn-xl px-5 py-3" type="Reset" value="Restart">
+                    <input id="rst" class="btn btn-primary btn-xl px-5 py-3" type="Reset" value="Restart">
                 </div>
             </div>
             <div class="row mt-5">
                 <div class="col-4 offset-md-1">
                     <div class="card" style="width: 20rem; height: 18rem;">
-                        <div class="card-body">
+                        <div id="gameCard" class="card-body">
                             <p id="joke-one">Loading Joke 1...</p>
                         </div>
                         <div class="card-footer">
@@ -58,7 +58,7 @@
                 </div>
                 <div class="col-4 offset-md-2">
                     <div class="card" style="width: 20rem; height: 18rem;">
-                        <div class="card-body">
+                        <div id="gameCard" class="card-body">
                             <p id="joke-two">Loading Joke 2...</p>
                         </div>
                         <div class="card-footer">
@@ -69,7 +69,7 @@
             </div>
             <div class="row mt-5 pt-5">
                 <div class="col offset-md-5">
-                    <input id="viewWinners" class="btn btn-primary btn-xl px-4 py-3" type="button" value="View Winners">
+                    <input id="viewWinners" class="btn btn-success btn-xl px-4 py-3" type="button" value="View Winners">
                 </div>
             </div>
         </div>
