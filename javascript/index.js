@@ -35,10 +35,15 @@ const game = async () => {
 
 
 let rst = document.getElementById('rst');
+var x = document.getElementById("toggleWinners");
 rst.onclick = function () {
+    if (toggleWinners.style.display === "block") {
+        toggleWinners.style.display = "none";
+    } 
     gameState.allJokes = [];
     gameState.winners = [];
     gameState.losers = [];
+    
     game();
 }
 
@@ -78,7 +83,7 @@ function vote() {
 
 function showWinner() {
     let winBtn = document.querySelector('#viewWinners');
-    var x = document.getElementById("toggleWinners");
+    
 
     winBtn.onclick = function () {
 
@@ -89,10 +94,10 @@ function showWinner() {
         //console.log(winJoke);
 
 
-        if (toggleWinners.style.display === "none") {
-            toggleWinners.style.display = "block";
+        if (x.style.display === "none") {
+            x.style.display = "block";
         } else {
-            toggleWinners.style.display = "none";
+            x.style.display = "none";
         }
 
     }
