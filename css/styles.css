@@ -1,14 +1,13 @@
 html {
-    height: 150%;
+    height: 100%;
     
 }
-body {
-    height: 100%;
-}
+
 
 #homePage {
     background-image: url(../imgs/chuck1.jpg);
     background-size: cover;
+    
     
     
 }
@@ -22,6 +21,7 @@ body {
     background-image: url(../imgs/chuck2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-size: 110%;
 }
 
 #gameCard {
