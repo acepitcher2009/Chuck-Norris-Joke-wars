@@ -13,7 +13,6 @@ let viewWinners = document.getElementById("toggleWinners");
 let winBtn = document.querySelector('#viewWinners');
 let vote1 = document.getElementById('vote1');
 let vote2 = document.getElementById('vote2');
-let voteBtns = document.getElementsByClassName("vote");
 let numRounds = 5;
 let count = 0;
 
@@ -69,10 +68,6 @@ function vote() {
             count++;
             //initiate gameOver function
             gameOver();
-            //restart game using voting buttons
-            if (vote2.innerHTML === "Game Over") {
-                restartGame();
-            }
         }
         vote2.onclick = function () {
             //store winning and losing joke in appropriate array in session storage
@@ -85,24 +80,20 @@ function vote() {
             //increment count for later comparison
             count++;
             //initiate gameOver function
-            gameOver();
-            //restart game using voting buttons
-            if (vote2.innerHTML === "Game Over") {
-                restartGame();
-            }
+            gameOver();           
         }
-    }
+    } 
 }
 
 //displays gameover in game cards and voting buttons once count = 5
 function gameOver() {
     if (count >= numRounds) {
-        joke2.textContent = "Game Over";
-        joke1.textContent = "Game Over";
+        joke2.textContent = "GAME OVER..... CLICK RESTART BUTTON TO PLAY AGAIN";
+        joke1.textContent = "GAME OVER..... CLICK RESTART BUTTON TO PLAY AGAIN";
 
         if (vote1.innerHTML === "Vote") {
-            vote1.innerHTML = "Game Over";
-            vote2.innerHTML = "Game Over";
+            vote1.innerHTML = "GAME OVER";
+            vote2.innerHTML = "GAME OVER";
         }
     }
 }
@@ -131,6 +122,7 @@ function showWinner() {
         }
     }
 }
+
 //restart game logic
 function restartGame() {
     //hide winning cards once restart is pressed
@@ -179,6 +171,3 @@ showWinner();
 
 
 
-// set an onclick funstion to skip the movies and display two new movies 
-//set an onlcick function to restart the game by reinitializing the arrays to empty arrays. 
-//set a function to display the winners in order as well as the losers in a table format. 
